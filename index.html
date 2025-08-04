@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,11 +8,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background: #f9f9f9;
       color: #222;
+    }
+    nav {
+      background: #0b2545;
+      color: #fff;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     header {
       background: #0b2545;
@@ -100,13 +122,32 @@
   </style>
 </head>
 <body>
+
+  <!-- MENU DE NAVEGAÇÃO -->
+  <nav>
+    <a href="#porque">Por que a Traço?</a>
+    <a href="#segmentos">Nossos Segmentos</a>
+    <a href="#garantia">Nossa Garantia</a>
+    <a href="#formulario">Orçamento</a>
+  </nav>
+
   <header>
     <img src="logo traco.png" alt="Logo Traço Engenharia" />
     <h1>Traço Engenharia</h1>
     <p>Mais de 10 anos entregando excelência em reformas e construções na Bahia</p>
   </header>
 
-  <section class="section">
+  <section class="section" id="porque">
+    <h2>Por que escolher a Traço Engenharia?</h2>
+    <div class="card">
+      <p>Somos uma empresa com mais de uma década de experiência em obras de alto padrão, tanto públicas quanto privadas. Nossa missão é entregar qualidade, pontualidade e total transparência em cada projeto.</p>
+      <p>✔ Atendimento personalizado<br>
+         ✔ Engenharia com responsabilidade<br>
+         ✔ Equipe técnica especializada</p>
+    </div>
+  </section>
+
+  <section class="section" id="segmentos">
     <h2>Nossos Segmentos</h2>
     <div class="segmentos">
       <div class="card">
@@ -128,7 +169,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="garantia">
     <h2>Nossa Garantia</h2>
     <div class="card">
       <p>✔ Entregas dentro do prazo contratado</p>
@@ -145,24 +186,23 @@
   <section class="section" id="formulario">
     <h2>Formulário de Orçamento</h2>
     <form action="https://formsubmit.co/andrealmeidacaem@gmail.com" method="POST">
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_subject" value="Novo Orçamento - Traço Engenharia">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_subject" value="Novo Orçamento - Traço Engenharia">
 
-  <input type="text" name="Nome" placeholder="Nome completo" required />
-  <input type="email" name="Email" placeholder="Email" required />
-  <input type="tel" name="Telefone" placeholder="Telefone/WhatsApp" required />
-  <select name="Tipo de obra" required>
-    <option disabled selected>Tipo de obra</option>
-    <option>Residencial</option>
-    <option>Área gourmet</option>
-    <option>Praça</option>
-    <option>Obra pública</option>
-    <option>Outros</option>
-  </select>
-  <textarea name="Descrição" placeholder="Descreva o projeto ou serviço desejado" rows="4"></textarea>
-  <button type="submit">Enviar Orçamento</button>
-</form>
-
+      <input type="text" name="Nome" placeholder="Nome completo" required />
+      <input type="email" name="Email" placeholder="Email" required />
+      <input type="tel" name="Telefone" placeholder="Telefone/WhatsApp" required />
+      <select name="Tipo de obra" required>
+        <option disabled selected>Tipo de obra</option>
+        <option>Residencial</option>
+        <option>Área gourmet</option>
+        <option>Praça</option>
+        <option>Obra pública</option>
+        <option>Outros</option>
+      </select>
+      <textarea name="Descrição" placeholder="Descreva o projeto ou serviço desejado" rows="4"></textarea>
+      <button type="submit">Enviar Orçamento</button>
+    </form>
   </section>
 
   <footer>
