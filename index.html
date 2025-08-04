@@ -143,21 +143,25 @@
 
   <section class="section" id="formulario">
     <h2>Formulário de Orçamento</h2>
-    <form>
-      <input type="text" placeholder="Nome completo" required />
-      <input type="email" placeholder="Email" required />
-      <input type="tel" placeholder="Telefone/WhatsApp" required />
-      <select required>
-        <option disabled selected>Tipo de obra</option>
-        <option>Residencial</option>
-        <option>Área gourmet</option>
-        <option>Praça</option>
-        <option>Obra pública</option>
-        <option>Outros</option>
-      </select>
-      <textarea placeholder="Descreva o projeto ou serviço desejado" rows="4"></textarea>
-      <button type="submit">Enviar Orçamento</button>
-    </form>
+    <form action="https://formsubmit.co/andrealmeidacaem@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="Novo Orçamento - Traço Engenharia">
+
+  <input type="text" name="Nome" placeholder="Nome completo" required />
+  <input type="email" name="Email" placeholder="Email" required />
+  <input type="tel" name="Telefone" placeholder="Telefone/WhatsApp" required />
+  <select name="Tipo de obra" required>
+    <option disabled selected>Tipo de obra</option>
+    <option>Residencial</option>
+    <option>Área gourmet</option>
+    <option>Praça</option>
+    <option>Obra pública</option>
+    <option>Outros</option>
+  </select>
+  <textarea name="Descrição" placeholder="Descreva o projeto ou serviço desejado" rows="4"></textarea>
+  <button type="submit">Enviar Orçamento</button>
+</form>
+
   </section>
 
   <footer>
